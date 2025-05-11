@@ -1,0 +1,59 @@
+\hypertarget{server_8cpp}{}\doxysection{Файл Server/server.cpp}
+\label{server_8cpp}\index{Server/server.cpp@{Server/server.cpp}}
+
+
+Сервер для вычисления кратчайших путей (алгоритм Левита)  
+
+
+{\ttfamily \#include \char`\"{}../\+Include/httplib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Methods/main\+Method.\+cpp\char`\"{}}\newline
+Граф включаемых заголовочных файлов для server.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Сервер для вычисления кратчайших путей (алгоритм Левита) 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{server.cpp@{server.cpp}!main@{main}}
+\index{main@{main}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Обработчик POST-\/запроса для алгоритма Левита
+
+Принимает JSON вида\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    "{}graph"{}: [[[1, 5], [2, 3]], ...], // список смежности}
+\DoxyCodeLine{    "{}start"{}: 0                         // начальная вершина}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Возвращает JSON с расстояниями\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    "{}distances"{}: [0, 5, 3, ...]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+См. определение в файле server.\+cpp строка 14
+

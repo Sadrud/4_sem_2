@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/server.dir/Server/server.cpp.o CMakeFiles/server.dir/Methods/mainMethod.cpp.o -o server 

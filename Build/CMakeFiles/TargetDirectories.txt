@@ -1,0 +1,4 @@
+/home/sadrudin/4_sem_2/Build/CMakeFiles/server.dir
+/home/sadrudin/4_sem_2/Build/CMakeFiles/client.dir
+/home/sadrudin/4_sem_2/Build/CMakeFiles/edit_cache.dir
+/home/sadrudin/4_sem_2/Build/CMakeFiles/rebuild_cache.dir

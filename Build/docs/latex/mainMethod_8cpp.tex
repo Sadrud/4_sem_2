@@ -1,0 +1,122 @@
+\hypertarget{mainMethod_8cpp}{}\doxysection{Файл Methods/main\+Method.cpp}
+\label{mainMethod_8cpp}\index{Methods/mainMethod.cpp@{Methods/mainMethod.cpp}}
+
+
+Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата в файл  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$nlohmann/json.\+hpp$>$}\newline
+Граф включаемых заголовочных файлов для main\+Method.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainMethod_8cpp__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{mainMethod_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{mainMethod_8cpp_af4b2e6efd05c3417c47e74531713a595}{levit\+\_\+algorithm}} (int n, const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ int, int $>$$>$$>$ \&graph, int start)
+\begin{DoxyCompactList}\small\item\em Реализация алгоритма Левита \end{DoxyCompactList}\item 
+std\+::pair$<$ json, std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ $>$ $>$ \mbox{\hyperlink{mainMethod_8cpp_a7bb089d331aeb85fdcf53a50f8b84fbe}{generate\+\_\+random\+\_\+graph}} (int n, int m, int max\+\_\+weight)
+\begin{DoxyCompactList}\small\item\em Генерирует случайный граф \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mainMethod_8cpp_ae8a8898ffcb663e6dd99a168a6a9aa13}{save\+\_\+results}} (const std\+::string \&filename, const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ int, int $>$$>$$>$ \&graph, const std\+::vector$<$ int $>$ \&distances)
+\begin{DoxyCompactList}\small\item\em Сохраняет результаты в файл \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата в файл 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{mainMethod_8cpp_a7bb089d331aeb85fdcf53a50f8b84fbe}\label{mainMethod_8cpp_a7bb089d331aeb85fdcf53a50f8b84fbe}} 
+\index{mainMethod.cpp@{mainMethod.cpp}!generate\_random\_graph@{generate\_random\_graph}}
+\index{generate\_random\_graph@{generate\_random\_graph}!mainMethod.cpp@{mainMethod.cpp}}
+\doxysubsubsection{\texorpdfstring{generate\_random\_graph()}{generate\_random\_graph()}}
+{\footnotesize\ttfamily std\+::pair$<$json, std\+::vector$<$std\+::vector$<$std\+::pair$<$int, int$>$ $>$ $>$ $>$ generate\+\_\+random\+\_\+graph (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m,  }\item[{int}]{max\+\_\+weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Генерирует случайный граф 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em n} & Количество вершин \\
+\hline
+{\em m} & Количество рёбер \\
+\hline
+{\em max\+\_\+weight} & Максимальный вес ребра \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Пара\+: граф в виде JSON и список смежности 
+\end{DoxyReturn}
+
+
+См. определение в файле main\+Method.\+cpp строка 68
+
+\mbox{\Hypertarget{mainMethod_8cpp_af4b2e6efd05c3417c47e74531713a595}\label{mainMethod_8cpp_af4b2e6efd05c3417c47e74531713a595}} 
+\index{mainMethod.cpp@{mainMethod.cpp}!levit\_algorithm@{levit\_algorithm}}
+\index{levit\_algorithm@{levit\_algorithm}!mainMethod.cpp@{mainMethod.cpp}}
+\doxysubsubsection{\texorpdfstring{levit\_algorithm()}{levit\_algorithm()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ levit\+\_\+algorithm (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ int, int $>$$>$$>$ \&}]{graph,  }\item[{int}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Реализация алгоритма Левита 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em n} & Количество вершин \\
+\hline
+{\em graph} & Граф в виде списка смежности \\
+\hline
+{\em start} & Начальная вершина \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Вектор расстояний до всех вершин 
+\end{DoxyReturn}
+
+
+См. определение в файле main\+Method.\+cpp строка 28
+
+\mbox{\Hypertarget{mainMethod_8cpp_ae8a8898ffcb663e6dd99a168a6a9aa13}\label{mainMethod_8cpp_ae8a8898ffcb663e6dd99a168a6a9aa13}} 
+\index{mainMethod.cpp@{mainMethod.cpp}!save\_results@{save\_results}}
+\index{save\_results@{save\_results}!mainMethod.cpp@{mainMethod.cpp}}
+\doxysubsubsection{\texorpdfstring{save\_results()}{save\_results()}}
+{\footnotesize\ttfamily void save\+\_\+results (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ int, int $>$$>$$>$ \&}]{graph,  }\item[{const std\+::vector$<$ int $>$ \&}]{distances }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Сохраняет результаты в файл 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Имя файла \\
+\hline
+{\em graph} & Исходный граф \\
+\hline
+{\em distances} & Результаты работы алгоритма \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле main\+Method.\+cpp строка 98
+

@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometry: Файл Methods/mainMethod.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Geometry
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2b9c4241c42dfb85a056344669c49e72.html">Methods</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mainMethod.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата в файл  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для mainMethod.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="mainMethod_8cpp__incl.png" border="0" usemap="#aMethods_2mainMethod_8cpp" alt=""/></div>
+<map name="aMethods_2mainMethod_8cpp" id="aMethods_2mainMethod_8cpp">
+<area shape="rect" title="Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата..." alt="" coords="235,5,426,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" title=" " alt="" coords="110,80,173,107"/>
+<area shape="rect" title=" " alt="" coords="197,80,270,107"/>
+<area shape="rect" title=" " alt="" coords="295,80,367,107"/>
+<area shape="rect" title=" " alt="" coords="391,80,476,107"/>
+<area shape="rect" title=" " alt="" coords="501,80,563,107"/>
+<area shape="rect" title=" " alt="" coords="588,80,735,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="mainMethod_8cpp__dep__incl.png" border="0" usemap="#aMethods_2mainMethod_8cppdep" alt=""/></div>
+<map name="aMethods_2mainMethod_8cppdep" id="aMethods_2mainMethod_8cppdep">
+<area shape="rect" title="Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата..." alt="" coords="44,5,235,32"/>
+<area shape="rect" href="tests_8cpp.html" title="Тестовые графы для алгоритма Левита" alt="" coords="5,80,124,107"/>
+<area shape="rect" href="server_8cpp.html" title="Сервер для вычисления кратчайших путей (алгоритм Левита)" alt="" coords="148,80,283,107"/>
+</map>
+</div>
+</div>
+<p><a href="mainMethod_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:af4b2e6efd05c3417c47e74531713a595"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainMethod_8cpp.html#af4b2e6efd05c3417c47e74531713a595">levit_algorithm</a> (int n, const std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt;&gt;&gt; &amp;graph, int start)</td></tr>
+<tr class="memdesc:af4b2e6efd05c3417c47e74531713a595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация алгоритма Левита  <a href="mainMethod_8cpp.html#af4b2e6efd05c3417c47e74531713a595">Подробнее...</a><br /></td></tr>
+<tr class="separator:af4b2e6efd05c3417c47e74531713a595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb089d331aeb85fdcf53a50f8b84fbe"><td class="memItemLeft" align="right" valign="top">std::pair&lt; json, std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainMethod_8cpp.html#a7bb089d331aeb85fdcf53a50f8b84fbe">generate_random_graph</a> (int n, int m, int max_weight)</td></tr>
+<tr class="memdesc:a7bb089d331aeb85fdcf53a50f8b84fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генерирует случайный граф  <a href="mainMethod_8cpp.html#a7bb089d331aeb85fdcf53a50f8b84fbe">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7bb089d331aeb85fdcf53a50f8b84fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a8898ffcb663e6dd99a168a6a9aa13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainMethod_8cpp.html#ae8a8898ffcb663e6dd99a168a6a9aa13">save_results</a> (const std::string &amp;filename, const std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt;&gt;&gt; &amp;graph, const std::vector&lt; int &gt; &amp;distances)</td></tr>
+<tr class="memdesc:ae8a8898ffcb663e6dd99a168a6a9aa13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет результаты в файл  <a href="mainMethod_8cpp.html#ae8a8898ffcb663e6dd99a168a6a9aa13">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae8a8898ffcb663e6dd99a168a6a9aa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата в файл </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainMethod_8cpp_source.html">mainMethod.cpp</a></p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a7bb089d331aeb85fdcf53a50f8b84fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb089d331aeb85fdcf53a50f8b84fbe">&#9670;&nbsp;</a></span>generate_random_graph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;json, std::vector&lt;std::vector&lt;std::pair&lt;int, int&gt; &gt; &gt; &gt; generate_random_graph </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Генерирует случайный граф </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Количество вершин </td></tr>
+    <tr><td class="paramname">m</td><td>Количество рёбер </td></tr>
+    <tr><td class="paramname">max_weight</td><td>Максимальный вес ребра </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Пара: граф в виде JSON и список смежности </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainMethod_8cpp_source.html">mainMethod.cpp</a> строка <a class="el" href="mainMethod_8cpp_source.html#l00068">68</a></p>
+
+</div>
+</div>
+<a id="af4b2e6efd05c3417c47e74531713a595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b2e6efd05c3417c47e74531713a595">&#9670;&nbsp;</a></span>levit_algorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; levit_algorithm </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Реализация алгоритма Левита </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Количество вершин </td></tr>
+    <tr><td class="paramname">graph</td><td>Граф в виде списка смежности </td></tr>
+    <tr><td class="paramname">start</td><td>Начальная вершина </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор расстояний до всех вершин </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainMethod_8cpp_source.html">mainMethod.cpp</a> строка <a class="el" href="mainMethod_8cpp_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="ae8a8898ffcb663e6dd99a168a6a9aa13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a8898ffcb663e6dd99a168a6a9aa13">&#9670;&nbsp;</a></span>save_results()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_results </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; std::pair&lt; int, int &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>distances</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сохраняет результаты в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя файла </td></tr>
+    <tr><td class="paramname">graph</td><td>Исходный граф </td></tr>
+    <tr><td class="paramname">distances</td><td>Результаты работы алгоритма </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainMethod_8cpp_source.html">mainMethod.cpp</a> строка <a class="el" href="mainMethod_8cpp_source.html#l00098">98</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

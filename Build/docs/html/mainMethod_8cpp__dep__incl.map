@@ -1,0 +1,5 @@
+<map id="Methods/mainMethod.cpp" name="Methods/mainMethod.cpp">
+<area shape="rect" id="node1" title="Файл, содержащий основной графовый метод, метод для создания случайного графа и для записи результата..." alt="" coords="44,5,235,32"/>
+<area shape="rect" id="node2" href="$tests_8cpp.html" title="Тестовые графы для алгоритма Левита" alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$server_8cpp.html" title="Сервер для вычисления кратчайших путей (алгоритм Левита)" alt="" coords="148,80,283,107"/>
+</map>
