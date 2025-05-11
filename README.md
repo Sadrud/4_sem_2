@@ -27,7 +27,7 @@
 
 ```bash
 # Сборка
-mkdir build && cd build
+cd build
 cmake ..
 make
 ```
